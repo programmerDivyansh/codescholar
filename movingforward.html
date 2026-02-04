@@ -1,0 +1,115 @@
+ <!--page 3-->
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>movingforward</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            header,h1.biggest{
+            padding: 10px;
+            margin: 0px;
+            background-color: darkblue;
+            color: white;
+            font-style: italic;
+            font-family: "italic",cursive;
+            font-weight: bolder;
+            font-size: 36px;
+            text-align: center;  
+            }
+            p.first,ul.only{
+            padding: 20px;
+            margin: 0px;
+            background-color: green;
+            color: lightblue;
+            font-style: italic;
+            font-family: "italic",cursive;
+            font-weight: bolder;
+            font-size: 18px;
+            text-align: center;   
+            }
+            h2.odd{
+            padding: 8px;
+            background-color: pink;
+            color: purple;
+            font-style: oblique;
+            font-family: algerian;
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;  
+            }
+            article{
+            padding: 8px;
+            background-color: lightblue;
+            color: green;
+            font-style: oblique;
+            font-family: broadway;
+            font-weight: light;
+            font-size: 18px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="biggest">Images,Hyperlink,Comment and text formatting</h1>
+            <p class="first">in this chapter,you are going to learn</p>
+            <ul class="only">
+                <li>Images in html</li>
+                <li>Hyperlinks in html</li>
+                <li>Comments in html</li>
+                <li>Text formation in html</li>
+            </ul>
+        </header>
+        <article>
+            <h2 class="odd">images in html</h2>
+            <p>to add images in html we use <b>&lt;img/&gt</b><br>
+            it has two <b><i>attributes</i></b> :-<br> 
+            1. src-In this src attribute we write the url of image between the double quotation marks.<br>
+            2. alt-it is used to show alternative text for the image when unloaded.<br>
+            3. width-it is used to define the width of the image. It can be set in percent or px<br>
+            4. height-it is used to define the height of the image. It can be set in percent or px<br>
+            let's see this code's result :- &lt;img src="earth.jpg" alt="image" width="500px" height="150px"/&gt;</p> 
+            <img src="earth.jpg"alt="image" width="500px" height="150px"/>
+            <p>attributes adds information to the elements in html</p>
+        </article>
+        <article>
+            <h2 class="odd">hyperlinks in html</h2>
+            <p>to add hyperlinks in html we use <b>&lt;a&gt;&lt;/a&gt;</b><br>
+            it has two attributes:-<br> 
+           1. href- This attribute gives the link to add the hyperlink<br>
+           2. target- this attributes has four values which are;-<br>
+           (1)_self: (Default) Opens the linked document in the same frame or window as the current document was clicked. This is the default behavior if no target is specified.<br>
+           (2)_blank: Opens the linked document in a new window or tab. This is commonly used for external links to keep the user on your original site.<br>
+           (3)_parent: Opens the linked document in the parent frameset of the current frame.<br>
+           (4)_top: Opens the linked document in the full body of the window, breaking out of any nested framesets.<br>
+           let's see the result of this code :-&lt;a href="www.wikipedia.com" alt="_self"&gt;wikipedia&lt;/a&gt;
+           </p>
+           <a href="www.wikipedia.com" alt="_blank">wikipedia</a>
+        </article>
+        <article>
+            <h2 class="odd">text formatting in html</h2>
+            <p>for identation in html we use these :-<br> 
+            &lt;b&gt;Defines bold text.Let's see it's result: <b>n</b><br>
+            &lt;em&gt;Defines emphasized text.Let's see it's result: <em>n</em><br> 
+            &lt;i&gt;Defines a part of text in an alternate voice or mood.Let's see it's result: <i>n</i><br>
+            &lt;small&gt;Defines smaller text.Let's see it's result: <small>n</small><br>
+            &lt;strong&gt;Defines important text.Let's see it's result: <strong>n</strong><br>
+            &lt;sub&gt;Defines subscripted text.Let's see it's result: <sub>n</sub><br>
+            &lt;sup&gt;Defines superscripted text.Let's see it's result: <sup>n</sup><br>
+            &lt;ins&gt;Defines inserted text.Let's see it's result: <ins>n</ins><br>
+            &lt;del&gt;Defines deleted text.Let's see it's result: <del>n</del><br>
+            &lt;mark&gt;Defines marked/highlighted text.Let's see it's result: <mark>n</mark><br>
+            </p>
+        </article>
+        <article>
+            <h2 class="odd">comments in html</h2>
+            <p>we can add comments in html by doing this :-&lt;!--comment--&gt;<br>
+            we use it for :--comment:- <br>
+            1.Documentation: Explaining what specific parts of the code do.<br>
+            2.Organization: Labeling sections of the page.<br>
+            3.Debugging: Temporarily hiding or disabling code without deleting it.<br>
+            4.Collaboration: Leaving notes, reminders, or instructions for other developers.<br>
+            5.Temporary Content Hiding: Preventing content (text, images, scripts) from appearing on the live webpage.<br>
+        <article>
+    </body>
+</html>

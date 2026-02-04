@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms part 2</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;   
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center; 
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>forms part 2</h1>
+        <p id="p">in ths chapter we are going to learn:-</p>
+        <ul id="p">
+            <li>input types</li>
+            <li>other form elements</li>
+            <ol>
+                <li>label element</li>
+                <li>select element</li>
+                <li>textarea element</li>
+                <li>button element</li>
+                <li>fieldset element</li>
+                <li>legend element</li>
+                <li>datalist element</li>
+                <li>output element</li>
+            </ol>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2 id="heading">input types</h2>
+            <p>HTML5 introduced several new input types to enhance form functionality and user experience. Here are some of the most commonly used input types:</p>
+            <ul>
+                <li><strong>text</strong>: A single-line text input field.</li>
+                <li><strong>password</strong>: A text input field that masks the entered characters.</li>
+                <li><strong>email</strong>: An input field for email addresses, with built-in validation.</li>
+                <li><strong>number</strong>: An input field for numeric values, allowing for increment/decrement controls.</li>
+                <li><strong>date</strong>: An input field for selecting dates from a calendar interface.</li>
+                <li><strong>color</strong>: An input field that allows users to select a color from a color picker.</li>
+                <li><strong>range</strong>: A slider control for selecting a value within a specified range.</li>
+                <li><strong>tel</strong>: An input field for telephone numbers.</li>
+                <li><strong>url</strong>: An input field for web addresses, with built-in validation.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">label element</h2>
+            <p>The <code>&lt;label&gt;</code> element is used to define labels for form controls. It improves accessibility by associating a text label with a specific input element. You can link a label to an input using the <code>for</code> attribute, which should match the <code>id</code> of the corresponding input element.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;label for="username"&gt;Username:&lt;/label&gt;
+                &lt;input type="text" id="username" name="username"&gt;
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">select element</h2>
+            <p>The <code>&lt;select&gt;</code> element is used to create a drop-down list of options. Users can select one or more options from the list. The <code>&lt;option&gt;</code> elements define the available choices within the <code>&lt;select&gt;</code> element.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;label for="cars"&gt;Choose a car:&lt;/label&gt;
+                &lt;select id="cars" name="cars"&gt;
+                    &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+                    &lt;option value="saab"&gt;Saab&lt;/option&gt;
+                    &lt;option value="mercedes"&gt;Mercedes&lt;/option&gt;
+                    &lt;option value="audi"&gt;Audi&lt;/option&gt;
+                &lt;/select&gt;
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">textarea element</h2>
+            <p>The <code>&lt;textarea&gt;</code> element is used to create a multi-line text input field. It allows users to enter larger amounts of text compared to a single-line input field.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;label for="message"&gt;Message:&lt;/label&gt;
+                &lt;textarea id="message" name="message" rows="4" cols="50"&gt;&lt;/textarea&gt;
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">button element</h2>
+            <p>The <code>&lt;button&gt;</code> element is used to create clickable buttons in a form. Buttons can be used to submit forms, reset forms, or trigger custom actions using JavaScript.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;button type="submit"&gt;Submit&lt;/button&gt;
+                &lt;button type="reset"&gt;Reset&lt;/button&gt;
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">fieldset and legend elements</h2>
+            <p>The <code>&lt;fieldset&gt;</code> element is used to group related elements within a form, while the <code>&lt;legend&gt;</code> element provides a caption for the <code>&lt;fieldset&gt;</code>. This helps improve the organization and accessibility of forms.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;fieldset&gt;
+                    &lt;legend&gt;Personal Information&lt;/legend&gt;
+                    &lt;label for="name"&gt;Name:&lt;/label&gt;
+                    &lt;input type="text" id="name" name="name"&gt;&lt;br&gt;
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;
+                    &lt;input type="email" id="email" name="email"&gt;
+                &lt;/fieldset&gt;
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">datalist element</h2>
+            <p>The <code>&lt;datalist&gt;</code> element is used to provide a list of predefined options for an <code>&lt;input&gt;</code> element. It allows users to select from a list of options while still being able to enter their own value.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;label for="browsers"&gt;Choose a browser:&lt;/label&gt;
+                &lt;input list="browsers" id="browser" name="browser"&gt;
+                &lt;datalist id="browsers"&gt;
+                &lt;option value="Chrome"&gt;
+                &lt;option value="Firefox"&gt;  
+                &lt;option value="Safari"&gt;
+                &lt;option value="Edge"&gt;
+                &lt;option value="Opera"&gt;
+                &lt;/datalist&gt;
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">output element</h2>
+            <p>The <code>&lt;output&gt;</code> element is used to represent the result of a calculation or user action. It is typically used in conjunction with JavaScript to display dynamic results within a form.</p>
+            <p>Example:</p>
+            <pre>
+                &lt;label for="result"&gt;Result:&lt;/label&gt;
+                &lt;output id="result" name="result"&gt;0&lt;/output>
+            </pre>
+        </section>   
+    </main>
+</body>
+</html>

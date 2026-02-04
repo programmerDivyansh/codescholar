@@ -1,0 +1,198 @@
+<!--page 10-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center; 
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Images in HTML</h1>
+        <p id="p">In this chapter you are going to learn :-</p>
+        <ul id="p">
+            <li>adding images</li>
+            <li>image from another folder and mage from another website</li>
+            <li>animated image</li>
+            <li>image float</li>
+            <li>common image formats</li>
+            <li>image maps</li>
+            <li>area element</li>
+            <li>javascript in image map</li>
+            <li>background image on a html element</li>
+            <li>background image on a page</li>
+            <li>background image stretch,repeat and cover</li>
+            <li>picture element</li>
+            <li>source element</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2 id="heading">Adding Images</h2>
+            <p>To add an image in HTML, you use the <code>&lt;img&gt;</code> tag. The <code>src</code> attribute specifies the path to the image, and the <code>alt</code> attribute provides alternative text for the image if it cannot be displayed.</p>
+            <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image"&gt;</code></pre>
+            <p>we also use width and height attribute to define the width and height of the image.Value can be set in pixels or percentage.</p>
+            <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image" width="500" height="600"&gt;</code></pre>
+        </section>
+        <section>
+            <h2 id="heading">Image from Another Folder and Image from Another Website</h2>
+            <p>To add an image from another folder, you need to specify the relative path to that folder. For example, if your image is in a folder named "images" located in the same directory as your HTML file, you would use:</p>
+            <pre><code>&lt;img src="images/image.jpg" alt="Description of image"&gt;</code></pre>
+            <p>To add an image from another website, you can use the full URL of the image:</p>
+            <pre><code>&lt;img src="https://www.example.com/image.jpg" alt="Description of image"&gt;</code></pre>
+        </section>
+        <section>
+            <h2 id="heading">Animated Image</h2>
+            <p>Animated images can be added using the same <code>&lt;img&gt;</code> tag. The most common format for animated images is GIF. Here is an example:</p>
+            <pre><code>&lt;img src="path/to/animated.gif" alt="Description of animated image"&gt;</code></pre>
+        </section>
+        <section>
+            <h2 id="heading">Image Float</h2>
+            <p>You can use CSS to float images to the left or right of the text. Here is an example of how to float an image to the right:</p>
+            <pre><code>&lt;img src="path/to/image.jpg" alt="Description of image" style="float: right;"&gt;</code></pre>
+            <p>This will allow the text to wrap around the image.And the float property has two more values left and center usedd to make it float in center and left of the website.</p>
+        </section>
+        <section>
+            <h2 id="heading">Common Image Formats</h2>
+            <p>Some common image formats used in web development include:</p>
+            <ul>
+                <li>JPEG (Joint Photographic Experts Group) - Best for photographs and images with many colors.</li>
+                <li>PNG (Portable Network Graphics) - Supports transparency and is best for images with text, logos, and graphics.</li>
+                <li>GIF (Graphics Interchange Format) - Supports animation and is best for simple graphics and animations.</li>
+                <li>SVG (Scalable Vector Graphics) - Best for vector images and graphics that need to scale without losing quality.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">Image Maps</h2>
+            <p>An image map is an image with clickable areas. You can define these areas using the <code>&lt;map&gt;</code> and <code>&lt;area&gt;</code> tags. Here is an example:</p>
+            <pre><code>&lt;img src="path/to/image.jpg" usemap="#imagemap" alt="Description of image"&gt;
+            &lt;map name="imagemap"&gt;
+            &lt;area shape="rect" coords="34,44,270,350" href="link1.html" alt="Link 1"&gt;
+            &lt;area shape="circle" coords="337,300,44" href="link2.html" alt="Link 2"&gt;
+            &lt;/map&gt;</code></pre>
+            <p>the map element has a attribute named name which specifies the name of the image map</p>
+        </section>
+        <section>
+            <h2 id="heading">Area Element</h2>
+            <p>The <code>&lt;area&gt;</code> element is used within an image map to define the clickable areas. The <code>shape</code> attribute specifies the shape of the area (rectangle, circle, or polygon), and the <code>coords</code> attribute defines the coordinates of the area.</p>
+            <pre><code>&lt;area shape="rect" coords="34,44,270,350" href="link1.html" alt="Link 1"&gt;</code></pre> 
+            <p>this element uses these attributes :-</p>
+            <ul>
+                <li><strong>shape</strong>: Defines the shape of the clickable area (rect, circle, poly).</li>
+                <li><strong>coords</strong>: Specifies the coordinates for the shape.</li>
+                <li><strong>href</strong>: The URL to navigate to when the area is clicked.</li>
+                <li><strong>alt</strong>: Alternative text for the area.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">JavaScript in Image Map</h2>
+            <p>You can also use JavaScript with image maps to create interactive effects. For example, you can use the <code>onclick</code> attribute to trigger a JavaScript function when an area is clicked:</p>
+            <pre><code>&lt;area shape="rect" coords="34,44,270,350" href="#" onclick="myFunction()" alt="Link 1"&gt;</code></pre>
+            <p>In this example, when the area is clicked, the JavaScript function <code>myFunction()</code> will be executed.</p>
+        </section>
+        <section>
+            <h2 id="heading">Background Image on an HTML Element</h2>
+            <p>You can set a background image for any HTML element using CSS. Here is an example:</p>
+            <pre>
+                <code>
+                    div {
+                        background-image: url('path/to/image.jpg');
+                        width: 500px;
+                        height: 300px;
+                        }
+                </code>
+            </pre>
+            <p>or you can use the style attribute to add it to a specific element</p>
+            <pre><code>&lt;div style="background-image: url('path/to/image.jpg'); width: 500px; height: 300px;"&gt;&lt;/div&gt;</code></pre>
+        </section>
+        <section>
+            <h2 id="heading">Background Image on a Page</h2>
+            <p>To set a background image for the entire webpage, you can use the following CSS:</p>
+            <pre>
+                <code>
+                    body {
+                        background-image: url('path/to/image.jpg');
+                        }
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">Background Image Stretch, Repeat, and Cover</h2>
+            <p>You can control how the background image is displayed using CSS properties like <code>background-repeat</code>, <code>background-size</code>, and <code>background-position</code>. Here are some examples:</p>
+            <pre>
+                <code>
+                    body {
+                        background-image: url('path/to/image.jpg');
+                        background-repeat: no-repeat; /* Prevents the image from repeating */
+                        background-size: cover; /* Stretches the image to cover the entire area */
+                        background-position: center; /* Centers the image */
+                        }
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">Picture Element</h2>
+            <p>The <code>&lt;picture&gt;</code> element allows you to define multiple sources for an image, enabling responsive images based on different screen sizes or resolutions. Here is an example:</p>
+            <pre><code>&lt;picture&gt;
+            &lt;source media="(max-width: 600px)" srcset="small-image.jpg"&gt;
+            &lt;source media="(min-width: 601px)" srcset="large-image.jpg"&gt;
+            &lt;img src="default-image.jpg" alt="Description of image"&gt;
+            &lt;/picture&gt;</code></pre>
+            <p>In this example, different images are served based on the screen width.</p>
+        </section>
+        <section>
+            <h2 id="heading">Source Element</h2>
+            <p>The <code>&lt;source&gt;</code> element is used within the <code>&lt;picture&gt;</code> element to specify different image sources for different media conditions. Each <code>&lt;source&gt;</code> element can have a <code>media</code> attribute to define the conditions under which that source should be used, and a <code>srcset</code> attribute to specify the image file.</p>
+            <pre><code>&lt;source media="(max-width: 600px)" srcset="small-image.jpg"&gt;</code></pre>
+            <p>This example specifies that "small-image.jpg" should be used when the viewport width is 600 pixels or less.</p>
+        </section>
+    </main>
+    <footer>
+        <nav>
+        </nav>
+    </footer>
+</body>
+</html>

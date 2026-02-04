@@ -1,0 +1,92 @@
+<!--page 24-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms part1</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;   
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center; 
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>forms part 1</h1>
+        <p id="p">in ths chapter we are going to learn:-</p>
+        <ul id="p">
+            <li>what is forms</li>
+            <li>forms attributes list</li>
+        </ul>
+   </header> 
+   <main>
+       <section>
+        m  <h2>what is forms</h2>
+            <p>In html,we use &lt;form&gt;to make a form.Forms are very useful for us because we can use them to make login forms,feedback forms etc.</p>
+       </section>
+       <section>
+          <h2 id="heading">forms attributes list</h2>
+          <ul>
+                <li>action:it used for defining the action after the submitting the form.</li>
+                <li>method:it used for defining the http method of sending the data of forms.The form-data can be sent as URL variables (with method="get") or as HTTP post transaction (with method="post").</li>
+                <li>enctype:Specifies how the form-data should be encoded when submitting it to the server (only for method="post")</li>
+                <li>name:it specifies the name of form</li>
+                <li>target:The target attribute specifies where to display the response that is received after submitting the form.
+                    The target attribute can have one of the following values:
+                <ol>
+                    <li>_blank:The response is displayed in a new window or tab</li>
+                    <li>_self:The response is displayed in the current window</li>
+                    <li>_parent:The response is displayed in the parent frame</li>
+                    <li>_top:The response is displayed in the full body of the </li>
+                    <li>frame name:The response is displayed in a named iframe</li>
+                </ol></li>
+                <li>autocomplete:The autocomplete attribute specifies whether a form should have autocomplete on or off.When autocomplete is on, the browser automatically complete values based on values that the user has entered before.It has two values :- <br>
+               1.on:it allows autocomplete<br>
+               2.off:it doesn't allow autocomplete<br></li>
+               <li>novalidate:this attributes is used to not validate the form data</li>
+               <li>rel:Specifies the relationship between a linked resource and the current document.</li>
+               <li>accept-charset:Specifies the character encodings used for form submission</li>
+          </ul>
+        </section>
+   </main>
+</body>
+</html>

@@ -1,0 +1,465 @@
+<!--page 13-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center; 
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>tables</h1>
+        <p id="p">in this chapter you are going to learn :-</p>
+        <ul id="p">
+            <li>adding tables in html</li>
+            <li>table cells and rows</li>
+            <li>table headers</li>
+            <li>vertical table headers</li>
+            <li>colspan attribute</li>
+            <li>rowspan attribute</li>
+            <li>table caption</li>
+            <li>aligning texts in tables</li>
+            <li>table borders</li>
+            <li>collapsed table borders</li>
+            <li>html table width</li>
+            <li>cell padding</li>
+            <li>cell spacing</li>
+            <li>table horizontal and vertical table stripes</li>
+            <li>horizontal dividers</li>
+            <li>hoverable dividers</li>
+            <li>colgroup</li>
+            <li>col</li>
+            <li>legal css properties for colgroup</li>
+            <li>multiple col element,empty col elements and hide col elements</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2 id="heading">adding tables in html</h2>
+            <p>to add a table in html we use the &lt;table&gt; tag. inside the &lt;table&gt; tag we use the &lt;tr&gt; tag to define a table row and inside the &lt;tr&gt; tag we use the &lt;td&gt; tag to define a table cell.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 3&lt;/td&gt;
+                    &lt;td&gt;cell 4&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with 2 rows and 2 columns.</p>
+        </section>
+        <section>
+            <h2 id="heading">table cells and rows</h2>
+            <p>table cells are defined using the &lt;td&gt; tag and table rows are defined using the &lt;tr&gt; tag. each &lt;tr&gt; tag defines a new row in the table and each &lt;td&gt; tag defines a new cell in the row.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 3&lt;/td&gt;
+                    &lt;td&gt;cell 4&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with 2 rows and 2 columns.</p>
+        </section>
+        <section>
+            <h2 id="heading">table headers</h2>
+            <p>table headers are defined using the &lt;th&gt; tag. the &lt;th&gt; tag is used to define a header cell in a table. header cells are usually displayed in bold and centered by default.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with 2 columns and a header row.</p>
+        </section> 
+        <section>
+            <h2 id="heading">vertical table headers</h2>
+            <p>to create vertical table headers we can use the &lt;th&gt; tag inside the &lt;tr&gt; tag for each row. this will create a header cell for each row in the table.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with 2 rows and a vertical header for each row.</p>
+        </section>
+        <section>
+            <h2 id="heading">colspan attribute</h2>
+            <p>the colspan attribute is used to specify the number of columns a cell should span. to use the colspan attribute, we add it to the &lt;td&gt; or &lt;th&gt; tag and set its value to the number of columns we want the cell to span.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;th colspan="2"&gt;header&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with a header that spans 2 columns.</p>
+        </section> 
+        <section>
+            <h2 id="heading">rowspan attribute</h2>
+            <p>the rowspan attribute is used to specify the number of rows a cell should span. to use the rowspan attribute, we add it to the &lt;td&gt; or &lt;th&gt; tag and set its value to the number of rows we want the cell to span.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;th rowspan="2"&gt;header&lt;/th&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with a header that spans 2 rows.</p>
+        </section>
+        <section>
+            <h2 id="heading">table caption</h2>
+            <p>the &lt;caption&gt; tag is used to define a caption for a table. the caption is usually displayed above the table.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;caption&gt;table caption&lt;/caption&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with a caption above it.</p>
+        </section>
+        <section>
+            <h2 id="heading">aligning texts in tables</h2>
+            <p>to align text in table cells, we can use the align attribute in the &lt;td&gt; or &lt;th&gt; tags. the align attribute can take the values "left", "center", or "right".</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;th align="left"&gt;header 1&lt;/th&gt;
+                    &lt;th align="center"&gt;header 2&lt;/th&gt;
+                    &lt;th align="right"&gt;header 3&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td align="left"&gt;cell 1&lt;/td&gt;
+                    &lt;td align="center"&gt;cell 2&lt;/td&gt;
+                    &lt;td align="right"&gt;cell 3&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with aligned text in the header and cells.</p>
+        </section>
+        <section>
+            <h2 id="heading">table borders</h2>
+            <p>to add borders to a table, we can use the style attribute in the &lt;table&gt; tag. the border attribute takes a numeric value that specifies the width of the border in pixels.</p>
+            <pre>
+                <code>
+                    &lt;table style="border: 1px solid red"&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with borders around the table and its cells.</p>    
+        </section>
+        <section>
+            <h2 id="heading">collapsed table borders</h2>
+            <p>to collapse table borders, we can use the css property border-collapse in the style attribute of the &lt;table&gt; tag. setting border-collapse to "collapse" will merge the borders of adjacent cells into a single border.</p>
+            <pre>
+                <code>
+                    &lt;table style="border: 1px solid red; border-collapse: collapse"&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with collapsed borders.</p>
+        </section>
+        <section>
+            <h2 id="heading">html table width</h2>
+            <p>to set the width of a table, we can use the width attribute in the &lt;table&gt; tag. the width attribute can take a numeric value (in pixels) or a percentage value.</p>
+            <pre>
+                <code>
+                    &lt;table width="500"&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with a width of 500 pixels.</p>
+        </section>
+        <section>
+            <h2 id="heading">cell padding</h2>
+            <p>to add padding to table cells, we can use the style attribute in the &lt;table&gt; tag. the cellpadding attribute takes a numeric value that specifies the amount of padding (in pixels) to be added to each cell.</p>
+            <pre>
+                <code>
+                    &lt;table style="padding: 1px"&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with 10 pixels of padding in each cell.</p>
+            <p>we can also use height instead of width to set the height of the table</p>
+        </section>
+        <section>
+            <h2 id="heading">cell spacing</h2>
+            <p>to add spacing between table cells, we can use the style attribute in the &lt;table&gt; tag. the cellspacing attribute takes a numeric value that specifies the amount of spacing (in pixels) to be added between each cell.</p>
+            <pre>
+                <code>
+                    &lt;table style="border-spacing: 1px"&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with 10 pixels of spacing between each cell.</p>
+        </section>
+        <section>
+            <h2 id="heading">table horizontal and vertical table stripes</h2>
+            <p>to create horizontal and vertical stripes in a table, we can use the css properties nth-child and nth-of-type. these properties allow us to select specific rows or columns in the table and apply styles to them.</p>
+            <pre>
+                <code>
+                    td:nth-child(even) {
+                        background-color: #f2f2f2;
+                    }
+                    tr:nth-child(even) {
+                        background-color: #f9f9f9;
+                    }
+                </code>
+            </pre>
+            <p>this will create a table with horizontal and vertical stripes.</p>
+        </section>
+        <section>
+            <h2 id="heading">horizontal dividers</h2>
+            <p>to add horizontal dividers to a table, we can use the border-bottom property in the style attribute of the &lt;td&gt; or &lt;th&gt; tags. this property allows us to add a border to the bottom of each cell.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;tr&gt;
+                    &lt;th style="border-bottom: 1px solid black"&gt;header 1&lt;/th&gt;
+                    &lt;th style="border-bottom: 1px solid black"&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td style="border-bottom: 1px solid black"&gt;cell 1&lt;/td&gt;
+                    &lt;td style="border-bottom: 1px solid black"&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with horizontal dividers between each row.</p>
+        </section>
+        <section>
+            <h2 id="heading">hoverable dividers</h2>
+            <p>to create hoverable dividers in a table, we can use the :hover pseudo-class in css. this allows us to change the style of a table row when the user hovers over it with their mouse.</p>
+            <pre>
+                <code>
+                    tr:hover {
+                        background-color: #f1f1f1;
+                    }
+                </code>
+            </pre>
+            <p>this will create a table where the background color of a row changes when the user hovers over it.</p>
+        </section>
+        <section>
+            <h2 id="heading">colgroup</h2>
+            <p>the &lt;colgroup&gt; tag is used to group columns in a table. it is used to apply styles to multiple columns at once. the &lt;colgroup&gt; tag is placed inside the &lt;table&gt; tag, before the &lt;tr&gt; tags.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;colgroup&gt;
+                    &lt;col span="2" style="background-color: #f2f2f2"&gt;
+                    &lt;/colgroup&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with a colgroup that applies a background color to the first two columns.</p>
+        </section>
+        <section>
+            <h2 id="heading">col</h2>
+            <p>the &lt;col&gt; tag is used to define a column in a table. it is used inside the &lt;colgroup&gt; tag to apply styles to specific columns. the &lt;col&gt; tag can take attributes such as span and style.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;colgroup&gt;
+                    &lt;col style="background-color: #f2f2f2"&gt;
+                    &lt;col style="background-color: #f9f9f9"&gt;
+                    &lt;/colgroup&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre>
+            <p>this will create a table with two columns, each with a different background color.</p>
+        </section>
+        <section>
+            <h2 id="heading">legal css properties for colgroup</h2>
+            <p>the &lt;colgroup&gt; and &lt;col&gt; tags can accept various css properties to style the columns. some legal css properties for colgroup and col include:</p>
+            <ul>
+                <li>background-color</li>
+                <li>width</li>
+                <li>border</li>
+                <li>padding</li>
+                <li>text-align</li>
+            </ul>
+            <p>these properties can be applied to the &lt;colgroup&gt; or &lt;col&gt; tags to style the columns in the table.</p>
+        </section>
+        <section>
+            <h2 id="heading">multiple col element,empty col elements and hide col elements</h2>
+            <p>we can use multiple &lt;col&gt; elements inside a &lt;colgroup&gt; to style different columns in a table. we can also create empty &lt;col&gt; elements to skip styling for certain columns. to hide a column,
+             we can set the display property to "none" in the style attribute of the &lt;col&gt; tag.</p>
+            <pre>
+                <code>
+                    &lt;table&gt;
+                    &lt;colgroup&gt;
+                    &lt;col style="background-color: #f2f2f2"&gt;
+                    &lt;col&gt; <!-- empty col element -->
+                    &lt;col style="display: none"&gt; <!-- hide col element -->
+                    &lt;/colgroup&gt;
+                    &lt;tr&gt;
+                    &lt;th&gt;header 1&lt;/th&gt;
+                    &lt;th&gt;header 2&lt;/th&gt;
+                    &lt;th&gt;header 3&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                    &lt;td&gt;cell 1&lt;/td&gt;
+                    &lt;td&gt;cell 2&lt;/td&gt;
+                    &lt;td&gt;cell 3&lt;/td&gt;
+                    &lt;/tr&gt; 
+                    &lt;/table&gt;
+                </code>
+            </pre> 
+            <p>this will create a table with the first column styled, the second column unstyled, and the third column hidden.</p>
+        </section>
+        <section>
+            <h2 id="heading">tip</h2>
+            <p>we can also style different rows and columns and even cells in tables</p>
+        </section>  
+    </main>
+</body>
+</html>

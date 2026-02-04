@@ -1,0 +1,182 @@
+<!--page 19-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>head element in html</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center; 
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Everything inside head element in HTML</h1>
+        <p id="p">in this chapter you are going to learn</p>
+        <ul id="p">
+            <li>what is head element</li>
+            <li>title tag</li>
+            <li>meta tag</li>
+            <li>link tag</li>
+            <li>style tag</li>
+            <li>script tag</li>
+            <li>base tag</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2 id="heading"> head element</h2>
+            <p>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag. Metadata typically define the document title, character set, styles, scripts, and other meta information. The &lt;head&gt; element can include several different types of elements, including:</p>
+            <ul>
+                <li>&lt;title&gt;: Specifies the title of the document, which is displayed in the browser's title bar or tab.</li>
+                <li>&lt;meta&gt;: Provides metadata about the HTML document, such as character encoding, author, description, and keywords for search engines.</li>
+                <li>&lt;link&gt;: Used to link external resources like stylesheets (CSS) to the HTML document.</li>
+                <li>&lt;style&gt;: Contains internal CSS styles that apply to the HTML document.</li>
+                <li>&lt;script&gt;: Used to embed or reference JavaScript code that adds interactivity to the web page.</li>
+                <li>&lt;base&gt;: Specifies a base URL for all relative URLs in the document.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading"> title tag</h2>
+            <p>The &lt;title&gt; tag defines the title of the HTML document. The title is displayed on the browser's title bar or tab, and it is also used by search engines to identify the content of the page. The &lt;title&gt; tag must be placed within the &lt;head&gt; section of the HTML document. Here is an example of how to use the &lt;title&gt; tag:</p>
+            <pre>
+               <code>
+                   &lt;head&gt;
+                   &lt;title&gt;My Web Page&lt;/title&gt;
+                   &lt;/head&gt;
+               </code>
+        </section>
+        <section>
+            <h2 id="heading"> meta tag</h2>
+            <p>The &lt;meta&gt; tag provides metadata about the HTML document. Metadata is information that describes other data, and it is not displayed on the web page itself. The &lt;meta&gt; tag is typically used to specify the character set, author, description, keywords, and viewport settings for the document. Here are some common uses of the &lt;meta&gt; tag:</p>
+            <ul>
+                <li>Character Set: Specifies the character encoding for the document.
+                    <pre>
+                       <code>
+                           &lt;meta charset="UTF-8"&gt;
+                       </code>
+                    </pre>
+                </li>
+                <li>Description: Provides a brief description of the page's content for search engines.
+                    <pre>
+                       <code>
+                           &lt;meta name="description" content="This is my web page about HTML"&gt;
+                       </code>
+                    </pre>
+                </li>
+                <li>Keywords: Lists keywords relevant to the page for search engine optimization.
+                    <pre>
+                       <code>
+                           &lt;meta name="keywords" content="HTML, CSS, JavaScript"&gt;
+                       </code>
+                    </pre>
+                </li>
+                <li>Viewport: Controls the layout on mobile browsers.
+                    <pre>
+                       <code>
+                           &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                       </code>
+                    </pre>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading"> link tag</h2>
+            <p>The &lt;link&gt; tag is used to link external resources to the HTML document. It is commonly used to link stylesheets (CSS) that define the visual appearance of the web page. The &lt;link&gt; tag must be placed within the &lt;head&gt; section of the HTML document. Here is an example of how to use the &lt;link&gt; tag to link an external CSS file:</p>
+            <pre>
+               <code>
+                   &lt;head&gt;
+                   &lt;link rel="stylesheet" href="styles.css"&gt;
+                   &lt;/head&gt;
+               </code>
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading"> style tag</h2>
+            <p>The &lt;style&gt; tag is used to define internal CSS styles for the HTML document. It allows you to include CSS rules directly within the HTML file, rather than linking to an external stylesheet. The &lt;style&gt; tag must be placed within the &lt;head&gt; section of the HTML document. Here is an example of how to use the &lt;style&gt; tag to define some CSS styles:</p>
+            <pre>
+               <code>
+                   &lt;head&gt;
+                   &lt;style&gt;
+                   body {
+                       background-color: lightblue;
+                   }
+                   h1 {
+                       color: navy;
+                       margin-left: 20px;
+                   }
+                   &lt;/style&gt;
+                   &lt;/head&gt;
+               </code>
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading"> script tag</h2>
+            <p>The &lt;script&gt; tag is used to embed or reference JavaScript code within an HTML document. JavaScript is a programming language that allows you to create dynamic and interactive web pages. The &lt;script&gt; tag can be placed either in the &lt;head&gt; section or at the end of the &lt;body&gt; section of the HTML document. Here is an example of how to use the &lt;script&gt; tag to include JavaScript code:</p>
+            <pre>
+               <code>
+                   &lt;head&gt;
+                   &lt;script&gt;
+                   function showMessage() {
+                       alert("Hello, welcome to my web page!");
+                   }
+                   &lt;/script&gt;
+                   &lt;/head&gt;
+               </code>
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading"> base tag</h2>
+            <p>The &lt;base&gt; tag is used to specify a base URL for all relative URLs in the HTML document. This means that any relative links or resources (like images, stylesheets, or scripts) will be resolved based on the URL defined in the &lt;base&gt; tag. The &lt;base&gt; tag must be placed within the &lt;head&gt; section of the HTML document. Here is an example of how to use the &lt;base&gt; tag:</p>
+            <pre>
+               <code>
+                   &lt;head&gt;
+                   &lt;base href="https://www.example.com/"&gt;
+                   &lt;/head&gt;
+               </code>
+            </pre>
+            <p>In this example, if you have a relative link like &lt;a href="page.html"&gt;Page&lt;/a&gt;, it will be resolved to https://www.example.com/page.html based on the base URL specified in the &lt;base&gt; tag.</p>
+        </section>
+    </main>
+</body>
+</html>

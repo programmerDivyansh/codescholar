@@ -1,0 +1,104 @@
+<!--page 17-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons&iframes</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center; 
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>buttons and iframes in html</h1>
+        <p id="p">In this chapter you are going to learn:-</p>
+        <ul id="p">
+            <li>what is button element</li>
+            <li>styling buttons</li>
+            <li>iframes</li>
+            <li>examples of iframes</li>
+            <li>load links in iframes</li>
+    </header>
+    <main>
+        <section>
+            <h2 id="heading">what is button element</h2>
+            <p>The &lt;button&gt; element in HTML is used to create clickable buttons on a web page. These buttons can be used to submit forms, trigger JavaScript functions, or perform other actions when clicked by the user.</p>
+            <pre><code>&lt;button&gt;Click Me!&lt;/button&gt;</code></pre>
+        </section>
+        <section>
+            <h2 id="heading">styling buttons</h2>
+            <p>Buttons can be styled using CSS to change their appearance, such as background color, font size, border style, and more. You can also add hover effects to enhance user interaction.</p>
+            <pre>
+                <code>
+                    button{
+                       background-color: blue;
+                       color: white;
+                       padding: 10px 20px;
+                       border: none;
+                       border-radius: 5px;
+                       cursor: pointer;
+                       }
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">iframes</h2>
+            <p>The &lt;iframe&gt; element in HTML is used to embed another HTML document within the current document. It creates a rectangular area on the page where the external content is displayed.</p>
+            <pre><code>&lt;iframe src="https://www.example.com" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+            <p>in iframes uwe used to type in the url of the iframe and you know that we use width and height attributes to set the width and height of iframes (instead you can also use css)</p>
+        </section>
+        <section>
+            <h2 id="heading">examples of iframes</h2>
+            <p>Here is an example of an iframe embedding a YouTube video:</p>
+            <pre><code>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+        </section>
+        <section>
+            <h2 id="heading">load links in iframes</h2>
+            <p>You can load different web pages or links within an iframe by changing the src attribute. This allows you to display various content without navigating away from the main page.</p>
+            <pre><code>&lt;iframe name="iframe"src="https://www.wikipedia.org" width="800" height="600"&gt;&lt;/iframe&gt;</code></pre>
+            <pre><code>&lt;a href="#" target="iframe"&gt;n&lt;/a&gt;</code></pre>
+        </section>
+    </main>
+</body>
+</html>

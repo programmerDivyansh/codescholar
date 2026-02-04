@@ -1,0 +1,150 @@
+<!--page 9-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center;  
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Links</h1>
+        <p id="p">in this chapter you are going to learn :-</p>
+        <ul id="p">
+            <li>links in html</li>
+            <li>Absolute URLs vs. Relative URLs</li>
+            <li>wrapping links around html elements</li>
+            <li>Link to an Email Address</li>
+            <li>Button as a Link</li>
+            <li>Link colors</li>
+            <li>Links buttons</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2 id="heading">Links in HTML</h2>
+            <p>In HTML, links are created using the <code>&lt;a&gt;</code> (anchor) tag. The <code>href</code> attribute specifies the destination URL of the link. Here is an example of a simple link:</p>
+            <pre><code>&lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;</code></pre>
+            <p>This will create a clickable link that takes the user to "https://www.example.com".<br>
+            There are also two more main attributes :-</p>
+            <ul>
+                <li><strong>target</strong>: Specifies where to open the linked document. Common values are <code>_self</code> (default, opens in the same tab) and <code>_blank</code> (opens in a new tab).</li>
+                <li><strong>title</strong>: Provides additional information about the link, often displayed as a tooltip when hovering over the link.</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">Absolute URLs vs. Relative URLs</h2>
+            <p>There are two types of URLs used in links: absolute and relative.</p>
+            <ul>
+                <li><strong>Absolute URL</strong>: This is the full web address, including the protocol (http:// or https://), domain name, and path. For example:
+                    <pre><code>&lt;a href="https://www.example.com/page.html"&gt;Absolute Link&lt;/a&gt;</code></pre>
+                </li>
+                <li><strong>Relative URL</strong>: This is a link that is relative to the current page's location. It does not include the domain name. For example:
+                    <pre><code>&lt;a href="/page.html"&gt;Relative Link&lt;/a&gt;</code></pre>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">Wrapping Links Around HTML Elements</h2>
+            <p>You can wrap links around various HTML elements, such as images or block-level elements. For example, to make an image a clickable link:</p>
+            <pre>
+                <code> 
+                    &lt;a href="https://www.example.com"&gt;
+                    &lt;img src="image.jpg" alt="Example Image"&gt;&lt;/a&gt;
+                </code>
+            </pre>
+            <p>This will make the image clickable, directing users to the specified URL.</p>
+        </section>
+        <section>
+            <h2 id="heading">Link to an Email Address</h2>
+            <p>You can create a link that opens the user's default email client to send an email. This is done using the <code>mailto:</code> scheme in the <code>href</code> attribute. For example:</p>
+            <pre><code>&lt;a href="mailto:nothing@nmjkdnw.com"&gt;Send Email&lt;/a&gt;</code></pre>
+            <p>Clicking this link will open the email client with a new message addressed to "nothing@nmjkdnw.com".</p>
+        </section>
+        <section>
+            <h2 id="heading">Button as a Link</h2>
+            <p>You can also create a button that acts as a link using this kind of button <code>&lt;button onclick="document.location='default.asp'"&gt;</code> element along with JavaScript. Here is an example:</p>        
+        </section>
+        <section>
+            <h2 id="heading">Link Colors</h2>
+            <p>You can customize the colors of links using CSS. Here are some common link states you can style:</p>
+            <ul>
+                <li><strong>a:link</strong> - The default state of a link that has not been visited.</li>
+                <li><strong>a:visited</strong> - The state of a link that has been visited by the user.</li>
+                <li><strong>a:hover</strong> - The state of a link when the user hovers over it with the mouse.</li>
+                <li><strong>a:active</strong> - The state of a link when it is being clicked.</li>
+            </ul>
+            <p>Here is an example of CSS to style these link states:</p>
+            <pre>
+                <code>
+                    a:link {
+                        color: blue;
+                    }
+                    a:visited {
+                        color: purple;
+                    }
+                    a:hover {
+                        color: red;
+                    }
+                    a:active {
+                        color: orange;
+                    }
+                </code>
+            </pre>
+        </section>
+        <section>
+            <h2 id="heading">Links Buttons</h2>
+            <p>You can create buttons that function as links using the <code>&lt;button&gt;</code> element along with JavaScript. Here is an example:</p>
+            <pre>
+                <code>
+                    &lt;button onclick="window.location.href='https://www.example.com'"&gt;Go to Example.com&lt;/button&gt;
+                </code>
+            </pre>
+            <p>Clicking this button will take the user to "https://www.example.com".</p>
+        </section>
+    </main>
+</body>
+</html>

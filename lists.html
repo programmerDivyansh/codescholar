@@ -1,0 +1,318 @@
+<!--page 14-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists</title>
+    <style>
+        header{
+        padding: 10px;
+        margin: 0px;
+        background-color: darkblue;
+        color: white;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 36px;
+        text-align: center; 
+        }
+        #p{
+        padding: 20px;
+        margin: 0px;
+        background-color: green;
+        color: lightblue;
+        font-style: italic;
+        font-family: "italic",cursive;
+        font-weight: bolder;
+        font-size: 18px;
+        text-align: center; 
+        }
+        main{
+        padding: 8px;
+        background-color: lightblue;
+        color: green;
+        font-style: oblique;
+        font-family: broadway;
+        font-weight: light;
+        font-size: 18px;
+        }
+        h2#heading{
+        padding: 8px;
+        background-color: pink;
+        color: purple;
+        font-style: oblique;
+        font-family: algerian;
+        font-weight: bold;
+        font-size: 24px;
+        text-align: center;
+        }</style>
+</head>
+<body>
+    <header>
+        <h1>HTML Lists</h1>
+        <p id="p">In this chapter you are going to learn:-</p>
+        <ul id="p">
+            <li>what is list in html</li>
+            <li>unordered list</li>
+            <li>type attribute (ul)</li>
+            <li>nested list(ul,ol)</li>
+            <li>horizontal list(ul,ol,dl)</li>
+            <li>ordered list</li>
+            <li>type attribute(ol)</li>
+            <li>start attribute(ol)</li>
+            <li>nested list(ul,ol)</li>
+            <li>description list</li>
+        </ul>
+    </header>
+    <main>
+        <section>
+            <h2 id="heading">What is List in HTML?</h2>
+            <p>A list is a collection of related items that are grouped together. In HTML, lists are used to organize and present information in a structured manner. There are three main types of lists in HTML:</p>
+            <ul>
+                <li>Unordered List</li>
+                <li>Ordered List</li>
+                <li>Description List</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">Unordered List</h2>
+            <p>An unordered list is a collection of items that do not have a specific order. In HTML, unordered lists are created using the <code>&lt;ul&gt;</code> tag, and each item in the list is represented by the <code>&lt;li&gt;</code> tag. The items in an unordered list are typically displayed with bullet points.</p>
+            <h3 id="subheading">Example of Unordered List:</h3>
+            <pre>
+                <code>
+                 &lt;ul&gt;
+                 &lt;li&gt;Item 1&lt;/li&gt;
+                 &lt;li&gt;Item 2&lt;/li&gt;
+                 &lt;li&gt;Item 3&lt;/li&gt;
+                 &lt;/ul&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>   
+        </section>
+        <section>
+            <h2 id="heading">Type Attribute</h2>
+            <p>The <code>type</code> attribute in HTML is used to specify the style of the list markers for both unordered and ordered lists.</p>
+            <h3 id="subheading">Unordered List Type Attribute:</h3>
+            <p>For unordered lists, the <code>type</code> attribute can take the following values:</p>
+            <ul>
+                <li><code>disc</code>: Default bullet point (filled circle)</li>
+                <li><code>circle</code>: Hollow circle</li>
+                <li><code>square</code>: Filled square</li>
+            </ul>
+            <h3 id="subheading">Example of Unordered List with Type Attribute:</h3>
+            <pre>
+                <code>
+                 &lt;ul type="circle"&gt;
+                 &lt;li&gt;Item A&lt;/li&gt;
+                 &lt;li&gt;Item B&lt;/li&gt;
+                 &lt;li&gt;Item C&lt;/li&gt;
+                 &lt;/ul&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ul type="circle">
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">Nested List</h2>
+            <p>A nested list is a list that contains another list within it. In HTML, you can create nested lists by placing a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> tag inside a <code>&lt;li&gt;</code> tag of another list.</p>
+            <h3 id="subheading">Example of Nested List:</h3>
+            <pre>
+                <code>
+                 &lt;ul&gt;
+                 &lt;li&gt;Fruits
+                     &lt;ul&gt;
+                         &lt;li&gt;Apple&lt;/li&gt;
+                         &lt;li&gt;Banana&lt;/li&gt;
+                     &lt;/ul&gt;
+                 &lt;/li&gt;
+                 &lt;li&gt;Vegetables
+                     &lt;ul&gt;
+                         &lt;li&gt;Carrot&lt;/li&gt;
+                         &lt;li&gt;Broccoli&lt;/li&gt;
+                     &lt;/ul&gt;
+                 &lt;/li&gt;
+                 &lt;/ul&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ul>
+                <li>Fruits
+                    <ul>
+                        <li>Apple</li>
+                        <li>Banana</li>
+                    </ul>
+                </li>
+                <li>Vegetables
+                    <ul>
+                        <li>Carrot</li>
+                        <li>Broccoli</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">Horizontal List</h2>
+            <p>A horizontal list is a list where the items are displayed in a single line, rather than stacked vertically. In HTML, you can create a horizontal list by using CSS to change the display property of the list items.</p>
+            <h3 id="subheading">Example of Horizontal List:</h3>
+            <pre>
+                <code>
+                 &lt;ul style="list-style-type:none; padding:0;"&gt;
+                 &lt;li style="display:inline; margin-right:10px;"&gt;Home&lt;/li&gt;
+                 &lt;li style="display:inline; margin-right:10px;"&gt;About&lt;/li&gt;
+                 &lt;li style="display:inline; margin-right:10px;"&gt;Services&lt;/li&gt;
+                 &lt;li style="display:inline; margin-right:10px;"&gt;Contact&lt;/li&gt;
+                 &lt;/ul&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ul style="list-style-type:none; padding:0;">
+                <li style="display:inline; margin-right:10px;">Home</li>
+                <li style="display:inline; margin-right:10px;">About</li>
+                <li style="display:inline; margin-right:10px;">Services</li>
+                <li style="display:inline; margin-right:10px;">Contact</li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="heading">Ordered List</h2>
+            <p>An ordered list is a collection of items that have a specific order or sequence. In HTML, ordered lists are created using the <code>&lt;ol&gt;</code> tag, and each item in the list is represented by the <code>&lt;li&gt;</code> tag. The items in an ordered list are typically displayed with numbers or letters.</p>
+            <h3 id="subheading">Example of Ordered List:</h3>
+            <pre>
+                <code>
+                 &lt;ol&gt;
+                 &lt;li&gt;First Item&lt;/li&gt;
+                 &lt;li&gt;Second Item&lt;/li&gt;
+                 &lt;li&gt;Third Item&lt;/li&gt;
+                 &lt;/ol&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ol>
+                <li>First Item</li>
+                <li>Second Item</li>
+                <li>Third Item</li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="heading">Type Attribute</h2>
+            <p>The <code>type</code> attribute in ordered lists is used to specify the style of the list markers. It can take the following values:</p>
+            <ul>
+                <li><code>1</code>: Numbers (default)</li>
+                <li><code>a</code>: Lowercase letters</li>
+                <li><code>A</code>: Uppercase letters</li>
+                <li><code>i</code>: Lowercase Roman numerals</li>
+                <li><code>I</code>: Uppercase Roman numerals</li>
+            </ul>
+            <h3 id="subheading">Example of Ordered List with Type Attribute:</h3>
+            <pre>
+                <code>
+                 &lt;ol type="A"&gt;
+                 &lt;li&gt;Item One&lt;/li&gt;
+                 &lt;li&gt;Item Two&lt;/li&gt;
+                 &lt;li&gt;Item Three&lt;/li&gt;
+                 &lt;/ol&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ol type="A">
+                <li>Item One</li>
+                <li>Item Two</li>
+                <li>Item Three</li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="heading">Start Attribute</h2>
+            <p>The <code>start</code> attribute in ordered lists is used to specify the starting value of the list. By default, ordered lists start at 1, but you can change this by using the <code>start</code> attribute.</p>
+            <h3 id="subheading">Example of Ordered List with Start Attribute:</h3>
+            <pre>
+                <code>
+                 &lt;ol start="5"&gt;
+                 &lt;li&gt;Item Five&lt;/li&gt;
+                 &lt;li&gt;Item Six&lt;/li&gt;
+                 &lt;li&gt;Item Seven&lt;/li&gt;
+                 &lt;/ol&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ol start="5">
+                <li>Item Five</li>
+                <li>Item Six</li>
+                <li>Item Seven</li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="heading">Nested List</h2>
+            <p>A nested list is a list that contains another list within it. In HTML, you can create nested lists by placing a <code>&lt;ul&gt;</code> or <code>&lt;ol&gt;</code> tag inside a <code>&lt;li&gt;</code> tag of another list.</p>
+            <h3 id="subheading">Example of Nested Ordered List:</h3>
+            <pre>
+                <code>
+                 &lt;ol&gt;
+                 &lt;li&gt;Chapter 1
+                     &lt;ol&gt;
+                         &lt;li&gt;Section 1.1&lt;/li&gt;
+                         &lt;li&gt;Section 1.2&lt;/li&gt;
+                     &lt;/ol&gt;
+                 &lt;/li&gt;
+                 &lt;li&gt;Chapter 2
+                     &lt;ol&gt;
+                         &lt;li&gt;Section 2.1&lt;/li&gt;
+                         &lt;li&gt;Section 2.2&lt;/li&gt;
+                     &lt;/ol&gt;
+                     &lt;ul&gt;
+                     &lt;li&gt; --- IGNORE ---
+                     &lt;/li&gt; --- IGNORE ---
+                     &lt;/ul&gt;
+                 &lt;/li&gt;
+                 &lt;/ol&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <ol>
+                <li>Chapter 1
+                    <ol>
+                        <li>Section 1.1</li>
+                        <li>Section 1.2</li>
+                    </ol>
+                </li>
+                <li>Chapter 2
+                    <ol>
+                        <li>Section 2.1</li>
+                        <li>Section 2.2</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2 id="heading">Description List</h2>
+            <p>A description list is used to define terms and their descriptions. In HTML, description lists are created using the <code>&lt;dl&gt;</code> tag, with each term defined by the <code>&lt;dt&gt;</code> tag and each description defined by the <code>&lt;dd&gt;</code> tag.</p>
+            <h3 id="subheading">Example of Description List:</h3>
+            <pre>
+                <code>
+                 &lt;dl&gt;
+                 &lt;dt&gt;HTML&lt;/dt&gt;
+                 &lt;dd&gt;HyperText Markup Language&lt;/dd&gt;
+                 &lt;dt&gt;CSS&lt;/dt&gt;
+                 &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+                 &lt;/dl&gt;
+                </code>
+            </pre>
+            <p>This will render as:</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+            </dl>
+        </section>
+    </main>
+</body>
+</html>
