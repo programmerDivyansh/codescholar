@@ -53,11 +53,299 @@
         <h1>forms part 3</h1>
         <p id="p">in ths chapter we are going to learn:-</p>
         <ul id="p">
+            <li>value attribute</li>
+            <li>readonly attribute</li>
+            <li>disabled attribute</li>
+            <li>size attribute</li>
+            <li>maxlength attribute</li>
+            <li>min and max attribute</li>
+            <li>multiple attribute</li>
+            <li>pattern attribute</li>
+            <li>placeholder attribute</li>
+            <li>required attribute</li>
+            <li>>autocomplete attribute</li>
+            <li>autofocus attribute</li>
+            <li>step attribute</li>
+            <li>height and width attribute</li>
+            <li>list attribute</li>
+            <li>form attribute</li>
+            <li>formnovalidate attribute</li>
+            <li>formaction attribute</li>
+            <li>formenctype attribute</li>
+            <li>formmethod attribute</li>
+            <li>formtarget attribute</li>
         </ul>
     </header>
     <main>
         <section>
-            
+            <h2 id="heading">value attribute</h2>
+            <p>the value attribute is used to set a default value for an input field. it can be used with various input types such as text, email, password, etc. when the form is loaded, the input field will display the value specified in the value attribute.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" value="default value"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" value="default value">
+        </section>
+        <section>
+            <h2 id="heading">readonly attribute</h2>
+            <p>the readonly attribute is used to make an input field read-only. when an input field is set to readonly, the user cannot modify its value. however, the user can still select and copy the text from the input field.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" value="readonly value" readonly&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" value="readonly value" readonly>
+        </section>
+        <section>
+            <h2 id="heading">disabled attribute</h2>
+            <p>the disabled attribute is used to disable an input field. when an input field is disabled, the user cannot interact with it at all. the input field will be grayed out and will not be submitted with the form.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" value="disabled value" disabled&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" value="disabled value" disabled>
+        </section>
+        <section>
+            <h2 id="heading">size attribute</h2>
+            <p>the size attribute is used to specify the visible width of an input field. it is typically used with text input fields to control how many characters are visible at a time. the value of the size attribute is a positive integer that represents the number of characters that can be displayed.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" size="20"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" size="20">
+        </section>
+        <section>
+            <h2 id="heading">maxlength attribute</h2>
+            <p>the maxlength attribute is used to specify the maximum number of characters that a user can enter into an input field. it is commonly used with text input fields to limit the length of user input. when the user tries to enter more characters than the specified maxlength, the additional characters will be ignored.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" maxlength="10"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" maxlength="10">
+        </section>
+        <section>
+            <h2 id="heading">min and max attribute</h2>
+            <p>the min and max attributes are used to specify the minimum and maximum values for certain input types, such as number, range, date, etc. the min attribute sets the lowest acceptable value, while the max attribute sets the highest acceptable value. if a user tries to enter a value outside of the specified range, the form will not submit and may display an error message.</p>
+            <pre>
+                <code>
+                    &lt;input type="number" min="1" max="10"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="number" min="1" max="10">
+        </section>
+        <section>
+            <h2 id="heading">multiple attribute</h2>
+            <p>the multiple attribute is used with certain input types, such as email and file, to allow users to enter multiple values. when the multiple attribute is present, users can input more than one value by separating them with a comma (for email) or by selecting multiple files (for file input).</p>
+            <pre>
+                <code>
+                    &lt;input type="email" multiple&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="email" multiple>
+        </section>
+        <section>
+            <h2 id="heading">pattern attribute</h2>
+            <p>the pattern attribute is used to specify a regular expression that the input value must match in order for the form to be submitted. it is commonly used with text input fields to enforce specific formatting rules, such as requiring a certain number of digits or a specific format for email addresses.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" pattern="[A-Za-z]{3}"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" pattern="[A-Za-z]{3}">
+        </section>
+        <section>
+            <h2 id="heading">placeholder attribute</h2>
+            <p>the placeholder attribute is used to provide a short hint or example of the expected input in an input field. the placeholder text is displayed inside the input field when it is empty and disappears when the user starts typing. it can be used to guide users on what type of information they should enter.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" placeholder="Enter your name"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" placeholder="Enter your name">
+        </section>
+        <section>
+            <h2 id="heading">required attribute</h2>
+            <p>the required attribute is used to indicate that an input field must be filled out before the form can be submitted. when an input field has the required attribute, the browser will prevent form submission if the field is left empty and may display a warning message to the user.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" required&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" required>
+        </section>
+        <section>
+            <h2 id="heading">autocomplete attribute</h2>
+            <p>the autocomplete attribute is used to specify whether an input field should have autocomplete enabled or disabled. when autocomplete is enabled, the browser can suggest previously entered values for the input field based on the user's past input. this can help users fill out forms more quickly by providing suggestions as they type.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" autocomplete="on"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" autocomplete="on">
+        </section>
+        <section>
+            <h2 id="heading">autofocus attribute</h2>
+            <p>the autofocus attribute is used to automatically focus an input field when the page loads. when an input field has the autofocus attribute, it will be highlighted and ready for user input as soon as the page is displayed.</p>
+            <pre>
+                <code>
+                    &lt;input type="text" autofocus&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" autofocus>
+        </section>
+        <section>
+            <h2 id="heading">step attribute</h2>
+            <p>the step attribute is used to specify the legal number intervals for an input field. it is commonly used with number and range input types to control the increments or decrements of the value. for example, if you set step="0.01", the user can only enter values that are multiples of 0.01.</p>
+            <pre>
+                <code>
+                    &lt;input type="number" step="0.01"&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <input type="number" step="0.01">
+        </section>
+        <section>
+            <h2 id="heading">height and width attribute</h2>
+            <p>the height and width attributes are used to specify the dimensions of certain input types, such as image. these attributes define the height and width of the input element in pixels.</p>
+            <pre>
+                &lt;input type="image" src="image.jpg" height="100" width="100"&gt;
+            </code>
+            </pre>
+            <p>result:</p>
+            <input type="image" src="image.jpg" height="100" width="100">
+        </section>
+        <section>
+            <h2 id="heading">list attribute</h2>
+            <p>the list attribute is used to associate an input field with a datalist element. the datalist element provides a list of predefined options that users can choose from when filling out the input field. this can enhance the user experience by offering suggestions as they type.</p>
+            <pre>
+                &lt;input type="text" list="browsers"&gt;
+                &lt;datalist id="browsers"&gt;
+                    &lt;option value="Chrome"&gt;
+                    &lt;option value="Firefox"&gt;
+                    &lt;option value="Safari"&gt;
+                    &lt;option value="Edge"&gt;
+                &lt;/datalist&gt;
+            </code>
+            </pre>
+            <p>result:</p>
+            <input type="text" list="browsers">
+            <datalist id="browsers">
+                <option value="Chrome">
+                <option value="Firefox">
+                <option value="Safari">
+                <option value="Edge">
+            </datalist>
+        </section>
+        <section>
+            <h2 id="heading">form attribute</h2>
+            <p>the form attribute is used to specify the form element that an input field belongs to. this allows you to associate input fields with a form even if they are not nested within the form element in the HTML structure. the value of the form attribute should match the id of the form element.</p>
+            <pre>
+            <code>
+                &lt;form id="myForm"&gt;
+                    &lt;input type="text" name="username" form="myForm"&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                &lt;/form&gt;
+            </code>
+            </pre>
+            <p>result:</p>
+            <form id="myForm">
+                <input type="text" name="username" form="myForm">
+                <input type="submit" value="Submit">`
+        </section>
+        <section>
+            <h2 id="heading">formnovalidate attribute</h2>
+            <p>the formnovalidate attribute is used to indicate that the form should not be validated when submitted. when this attribute is present on a submit button, the browser will skip the validation process and allow the form to be submitted even if there are invalid input fields.</p>
+            <pre>
+                &lt;form&gt;
+                    &lt;input type="text" required&gt;
+                    &lt;button type="submit" formnovalidate&gt;Submit without validation&lt;/button&gt;
+                &lt;/form&gt;
+            </code>
+            </pre>
+            <p>result:</p>
+            <form>
+                <input type="text" required>
+                <button type="submit" formnovalidate>Submit without validation</button>
+        </section>
+        <section>
+            <h2 id="heading">formaction attribute</h2>
+            <p>the formaction attribute is used to specify the URL that the form data will be submitted to when a submit button is clicked. this attribute can be used to override the default action specified in the form element for individual submit buttons.</p>
+            <pre>
+                <code>
+                &lt;form action="/default-action"&gt;
+                    &lt;input type="text" name="username"&gt;
+                    &lt;button type="submit" formaction="/custom-action"&gt;Submit to custom action&lt;/button&gt;
+                &lt;/form&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <form action="/default-action">
+                <input type="text" name="username">
+                <button type="submit" formaction="/custom-action">Submit to custom action</button>
+        </section>
+        <section>
+            <h2 id="heading">formenctype attribute</h2>
+            <p>the formenctype attribute is used to specify the encoding type for the form data when it is submitted. this attribute is typically used with file input fields to specify how the form data should be encoded when files are uploaded.</p>
+            <pre>
+                <code>
+                &lt;form&gt;
+                    &lt;input type="file" name="file"&gt;
+                    &lt;button type="submit" formenctype="multipart/form-data"&gt;Submit with file upload&lt;/button&gt;
+                &lt;/form&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <form>
+                <input type="file" name="file">
+                <button type="submit" formenctype="multipart/form-data">Submit with file upload</button>
+        </section>
+        <section>
+            <h2 id="heading">formmethod attribute</h2>
+            <p>the formmethod attribute is used to specify the HTTP method that will be used to submit the form data. it can be set to either "get" or "post". when this attribute is present on a submit button, it overrides the default method specified in the form element for that button.</p>
+            <pre>
+                <code>
+                &lt;form method="post"&gt;
+                    &lt;input type="text" name="username"&gt;
+                    &lt;button type="submit" formmethod="get"&gt;Submit with GET method&lt;/button&gt;
+                &lt;/form&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <form method="post">
+                <input type="text" name="username">
+                <button type="submit" formmethod="get">Submit with GET method</button>
+        </section>
+        <section>
+            <h2 id="heading">formtarget attribute</h2>
+            <p>the formtarget attribute is used to specify where to display the response after submitting the form. it can be set to values such as "_blank" (to open in a new tab), "_self" (to open in the same frame), "_parent" (to open in the parent frame), or "_top" (to open in the full body of the window).</p>
+            <pre>
+                <code>
+                &lt;form&gt;
+                    &lt;input type="text" name="username"&gt;
+                    &lt;button type="submit" formtarget="_blank"&gt;Submit and open in new tab&lt;/button&gt;
+                &lt;/form&gt;
+                </code>
+            </pre>
+            <p>result:</p>
+            <form>
+                <input type="text" name="username">
+                <button type="submit" formtarget="_blank">Submit and open in new tab</button>
         </section>
     </main>
 </body>
