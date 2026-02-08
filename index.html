@@ -28,7 +28,7 @@
             font-size: 24px;
             text-align: center;
           }
-          article{
+          article,p{
             padding: 8px;
             background-color: lightblue;
             color: green;
@@ -37,20 +37,16 @@
             font-weight: light;
             font-size: 18px;
           }
-          footer{
-            padding: 8px;
-            background-color: lightblue;
-            color: green;
-            font-style: oblique;
-            font-family: broadway;
-            font-weight: light;
-            font-size: 18px;
+          body{
+            background-color: lightgray;
           }
-          footer>nav{
-            border: 2px darkgreen solid;
-            border-radius: 25px 25px 25px 25px;
-            margin: 2px;
-            padding: 6px;
+          a{
+            color: white;
+            background-color: purple;
+            padding: 8px;
+            font-style: oblique;
+            font-family: comic;
+            text-decoration: none;
           }
         </style>
     </head>
@@ -63,6 +59,10 @@
           <h2 id="h2">what is html?</h1>
           <p>HTML stands for hypertext markup language.it is a markup language.It is used to build the part of websites(text) we see</p>
         </article>
+        <article>
+          <h2 id="h2">who invented it when?</h2>
+          <p>Html was developed by Tim Berners Lee in 1991</p>
+        </article>
         <article id="hypertext" class="hypertext">
           <h2 id="h2">What does hypertext mean</h1>
           <p>Hypertext refers to links to other documents or websites</p>
@@ -71,16 +71,13 @@
           <h2 id="h2">What does markup mean</h2>
           <p>Markup refers to the use of specific tags to annotate a plain text document</p>
         </article>
-        <nav>
-          <button onclick="document.location='firstcode.html'">next page(first code)</button>
-        </nav>
         <footer>
           <p>see this video to get full explanation:-</p>
-          <a href="https://youtu.be/UG1pNV4pyy0">
-              <video src="https://youtu.be/UG1pNV4pyy0" width="100%" height="10%" controls>
-              </video>
-          </a>
+          <!--enter the video here-->
           <p>this is our youtube channel so make sure to subscribe it</p>
+           <nav>
+              <a href="firstcode.html" style="float: right;">next&gt;</a>
+           </nav>
         </footer>
     </body>
 </html>
