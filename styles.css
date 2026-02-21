@@ -1,0 +1,51 @@
+/* common styles for all pages */
+
+/* navigation panel */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow-y: auto;
+  background-color: black;
+  transition: height 0.25s ease;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+nav.open {
+  height: 100%;
+  visibility: visible;
+}
+
+/* lock body scroll when nav is visible */
+body.nav-open {
+  overflow: hidden;
+}
+
+/* buttons used to open/close nav */
+button#open,
+button#close {
+  background-color: gray;
+  color: white;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+}
+
+/* links inside navigation */
+a.nav-link {
+  color: white;
+  background-color: purple;
+  padding: 8px;
+  text-decoration: none;
+}
+
+a.nav-link:hover {
+  background-color: darkmagenta;
+}
